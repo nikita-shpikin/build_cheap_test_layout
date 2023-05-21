@@ -1,6 +1,6 @@
 .header {
 	&__content-block {
-		background: url('../../images/background.jpg') no-repeat
+		background: url('./../images/background.jpg') no-repeat
 			$backgroundColorContent center/cover;
 		background-blend-mode: hard-light;
 	}
@@ -10,8 +10,7 @@
 
 		padding: 5vh 0 40vh 0;
 
-		background: url('../../images/pictures_decor.png') no-repeat bottom right
-			50%;
+		background: url('./../images/pictures_decor.png') no-repeat bottom right 50%;
 
 		display: grid;
 		place-items: center;
@@ -125,7 +124,7 @@
 		flex-direction: column-reverse;
 
 		&__content-block {
-			background-image: url('../../images/background-768.jpg');
+			background-image: url('./../images/background-768.jpg');
 		}
 
 		&-container {
@@ -137,7 +136,7 @@
 			place-content: center;
 			gap: 1vh;
 
-			background: url('../../images/pictures_decor-768.png') no-repeat bottom
+			background: url('./../images/pictures_decor-768.png') no-repeat bottom
 				right;
 		}
 
