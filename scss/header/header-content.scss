@@ -101,11 +101,7 @@
 			position: absolute;
 			left: -40%;
 
-			&:hover {
-				transition: 2s ease;
-
-				transform: rotate(360deg);
-			}
+			animation: 4s ease-in-out 2s infinite animation;
 		}
 	}
 }
@@ -181,5 +177,19 @@
 		&__contact-address {
 			font-size: 15px;
 		}
+	}
+}
+
+@keyframes animation {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
 	}
 }
