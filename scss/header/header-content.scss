@@ -1,0 +1,187 @@
+.header {
+	&__content-block {
+		background: url('../../images/background.jpg') no-repeat
+			$backgroundColorContent center/cover;
+		background-blend-mode: hard-light;
+	}
+
+	&-container {
+		margin: 0 auto;
+
+		padding: 5vh 0 40vh 0;
+
+		background: url('../../images/pictures_decor.png') no-repeat bottom right
+			50%;
+
+		display: grid;
+		place-items: center;
+	}
+
+	&__logo-block {
+		display: flex;
+		align-items: center;
+		gap: 2vh;
+	}
+
+	&__logo {
+		height: 11vh;
+	}
+
+	&__text-block {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		@include title(28px);
+	}
+
+	&__subtitle {
+		@include subtitle(13px);
+
+		text-transform: uppercase;
+	}
+
+	&__contact-block {
+		margin-top: 5vh;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 3vh;
+	}
+
+	&__contact-link {
+		@include title(23px);
+
+		text-decoration: none;
+
+		transition: 0.4s ease-in;
+
+		&:hover {
+			color: $backgroundColorContent;
+			backdrop-filter: blur(10px);
+		}
+	}
+
+	&__contact-address {
+		@include subtitle(11px);
+
+		text-transform: uppercase;
+
+		transition: 0.4s ease-in;
+
+		&:hover {
+			color: $backgroundColorContent;
+			backdrop-filter: blur(10px);
+		}
+	}
+
+	&__btn {
+		@extend %btn;
+
+		margin-top: 3vh;
+	}
+
+	&__send {
+		margin-top: 5vh;
+
+		display: flex;
+		align-items: center;
+		gap: 2vh;
+
+		position: relative;
+
+		&-text {
+			@include subtitle(14px);
+
+			text-decoration: none;
+		}
+
+		&-icon {
+			position: absolute;
+			left: -40%;
+
+			&:hover {
+				transition: 2s ease;
+
+				transform: rotate(360deg);
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 478px) {
+	.header {
+		&-container {
+			background-size: 100%;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.header {
+		display: flex;
+		flex-direction: column-reverse;
+
+		&__content-block {
+			background-image: url('../../images/background-768.jpg');
+		}
+
+		&-container {
+			padding: 2vh;
+
+			grid-template-columns:
+				minmax(230px, 430px) repeat(2, minmax(200px, 252px))
+				40px;
+			place-content: center;
+			gap: 1vh;
+
+			background: url('../../images/pictures_decor-768.png') no-repeat bottom
+				right;
+		}
+
+		&__contact-block {
+			margin: revert;
+			gap: revert;
+		}
+
+		&__btn {
+			margin: revert;
+		}
+
+		&__send {
+			margin: revert;
+
+			justify-self: self-start;
+
+			&-text {
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.header {
+		&-container {
+			padding: 1vh;
+		}
+
+		&__title {
+			font-size: 41px;
+		}
+
+		&__subtitle {
+			font-size: 15px;
+		}
+
+		&__contact-link {
+			font-size: 29px;
+		}
+
+		&__contact-address {
+			font-size: 15px;
+		}
+	}
+}

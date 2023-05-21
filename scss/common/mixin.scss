@@ -1,0 +1,11 @@
+@mixin title($fz) {
+	font-size: $fz;
+
+	@extend %title;
+}
+
+@mixin subtitle($fz) {
+	font-size: $fz;
+
+	@extend %subtitle;
+}

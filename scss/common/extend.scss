@@ -1,0 +1,46 @@
+%title {
+	font-family: 'Oswald', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 145%;
+
+	text-transform: uppercase;
+	color: $mainColor;
+}
+
+%subtitle {
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 145%;
+
+	color: $secondaryColor;
+}
+
+%textMenu {
+	font: 400 normal 16px/22px 'Open Sans', sans-serif;
+
+	color: $mainColor;
+}
+
+%btn {
+	font: 400 normal 16px/19px 'Inter', sans-serif;
+
+	cursor: pointer;
+	color: $colorBtn;
+
+	padding: 20px;
+	width: 200px;
+	background: $mainColor;
+	box-shadow: 0px 15px 30px -12px $mainColorDark;
+
+	border-radius: 3px;
+	border: none;
+
+	transition: 0.4s ease-in;
+
+	&:hover {
+		background-color: $secondaryColor;
+		color: $colorBtn;
+	}
+}

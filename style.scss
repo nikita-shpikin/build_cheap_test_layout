@@ -1,0 +1,14 @@
+@import './scss/common/normalize.scss';
+@import './scss/common/variables.scss';
+@import './scss/common/extend.scss';
+@import './scss/common/mixin.scss';
+@import './scss/header/header.scss';
+
+body * {
+	margin: 0;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
