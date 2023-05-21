@@ -58,8 +58,8 @@
 		transition: 0.4s ease-in;
 
 		&:hover {
-			color: $backgroundColorContent;
-			backdrop-filter: blur(10px);
+			border-radius: 10px;
+			backdrop-filter: blur(15px);
 		}
 	}
 
@@ -71,8 +71,8 @@
 		transition: 0.4s ease-in;
 
 		&:hover {
-			color: $backgroundColorContent;
-			backdrop-filter: blur(10px);
+			border-radius: 10px;
+			backdrop-filter: blur(15px);
 		}
 	}
 
